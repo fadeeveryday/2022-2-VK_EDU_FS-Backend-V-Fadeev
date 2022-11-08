@@ -6,7 +6,7 @@ from django.views.decorators.http import require_http_methods
 def index_page(request):
     return render(request, 'index.html')
 
-@require_http_methods(['GET', 'POST'])
+@require_http_methods(['GET'])
 def chat_list(request):
     return JsonResponse({ "chats": [] })
 
