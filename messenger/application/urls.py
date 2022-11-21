@@ -24,7 +24,4 @@ urlpatterns = [
     path('chats/', include('chats.urls')),
     path('users/', include('users.urls')),
     path('subs/', include('subs.urls')),
-    path('messanger/', include('messanger.urls')),
-    
-
 ]
