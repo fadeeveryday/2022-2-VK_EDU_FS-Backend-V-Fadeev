@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from chats.views import index_page
+from chats.views import start_page
 
 urlpatterns = [
-    path('', index_page, name='index_page'),
+    path('', start_page, name='index_page'),
     path('admin/', admin.site.urls),
     path('chats/', include('chats.urls')),
     path('users/', include('users.urls')),
